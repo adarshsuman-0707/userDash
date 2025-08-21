@@ -1,0 +1,31 @@
+{
+  "name": "astrobackend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./Server.js",
+    "dev": "nodemon ./Server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "astronomia": "^4.1.1",
+    "astronomy-engine": "^2.1.19",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "mongoose": "^8.17.2",
+    "node-fetch": "^3.3.2",
+    "node-gyp": "^11.3.0",
+    "python-shell": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  },
+  "type": "commonjs",
+  "keywords": [],
+  "description": ""
+}
