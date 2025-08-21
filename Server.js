@@ -3,12 +3,14 @@ const dotenv = require("dotenv");
 require("./database/db.js")
 const User=require("./Model/userdata.js")
 dotenv.config();
+const path = require("path");
 
 const app = express();
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json())
 app.set("view engine","ejs")
-app.use(express.static('public'))
+// app.use(express.static('public'))
+app.use(express.static(path.join(__dirname, "public")))
 
 // More specific route FIRST
 app.get("/search", (req, res) => {
